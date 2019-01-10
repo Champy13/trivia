@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css?family=Saira:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <center>
+<body>
+    <div id="star"><!--Creamos un div para poder utilizar las propiedades CSS display para poder cambiar de pag-->
+     <h1 >&#60 QuizCode! ></h1>
+
+     <p >¡Bienvenid@! Ingresa tu Nombre:</p>
+
+     <input id="name"><!--Pedimos el nombre del usuario-->
+
+     <button class="button" type="button" onclick="myFunc()">¡ A JUGAR !</button><!--Creamos un botón con la función para almacenar el nombre-->
+    </div>
+
+  <div id= type-question><!--Creamos otro div con los botones de opción A o B-->
+    <p id="demo"></p>
+    <p>A continuación elige uno de nuestros Quiz's </p>
+    <button class="button" id="a" type="button" onclick="quizA()">Fácil </button>
+    <button class="button" id="a" type="button" onclick="hola()">Medio </button>
+    <button class="button" id="a" type="button" onclick="quizC()">Difícil</button>
+  </div>
+   </center>
+  <form id = "quiz" name = "quiz"><!--Se crea un formulario para poder realizar las preguntas del Quiz "A" y por medio de radio button obtener las respuestas y poder dar una puntuación-->
+
+    <p>QUIZ "A"</p>
+    <p>¿En que año piso el hombre la luna?</p>
+    <input type = "radio" id = "mc" name = "question1" value = "1962"> 1962<br>
+    <input type = "radio" id = "mc" name = "question1" value = "1969"> 1969<br>
+
+    <p class = "questions">¿Quien invento la bombilla?</p>
+    <input type = "radio" id = "mc" name = "question2" value = "Thomas Alva Edison">Thomas Alva Edison<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Albert Einstein"> Albert Einstein<br>
+
+    <p class = "questions">¿En que año aparecio JavaScript?</p>
+    <input type = "radio" id = "mc" name = "question3" value = "1985"> 1985<br>
+    <input type = "radio" id = "mc" name = "question3" value = "1995"> 1995<br>
+
+    <input class = "button" type = "button" value = "Terminar Quiz!" onclick = "check()">
+
+  </form>
+
+<form id = "me" name = "me"><!--Se crea un formulario para poder realizar las preguntas del Quiz "A" y por medio de radio button obtener las respuestas y poder dar una puntuación-->
+
+    <p>QUIZ "B"</p>
+    <p>¿Quién pintó la Mona Lisa?</p>
+    <input type = "radio" id = "mc" name = "question1" value = "Van"> Vincent VanGogh<br>
+    <input type = "radio" id = "mc" name = "question1" value = "Leo"> Leonardo DaVinci<br>
+
+    <p class = "questions">¿Quién es el autor de 'Don Quijote de la Mancha'?</p>
+    <input type = "radio" id = "mc" name = "question2" value = "Miguel">Miguel de Cervantes<br>
+    <input type = "radio" id = "mc" name = "question2" value = "Paulo"> Paulo Coehlo<br>
+
+    <p class = "questions">¿Quién es el autor de Claro de Luna?</p>
+    <input type = "radio" id = "mc" name = "question3" value = "Chopin"> Fréderic Chopin<br>
+    <input type = "radio" id = "mc" name = "question3" value = "Bethoven"> Ludwig van Bethoveen<br>
+
+  <p class = "questions">¿Cuántas veces ha sido nominada Meryl Streep a los Oscar?</p>
+    <input type = "radio" id = "mc" name = "question4" value = "21"> 21<br>
+    <input type = "radio" id = "mc" name = "question4" value = "19"> 19<br>
+
+    <input class = "button" type = "button" value = "Terminar Quiz!" onclick = "checkt()">
+
+  </form>
+  <form id= "quizB" name = "quizB"><!--Se crea un formulario para poder realizar las preguntas del Quiz "B" y por medio de radio button obtener las respues y poder dar una puntuación-->
+  <p>QUIZ "C"</p>
+  <p >¿Cuáles de los siguientes animales están más emparentados evolutivamente con las ballenas?</p>
+  <input type = "radio" id = "ms" name  = "question1" value="Las vacas"> Las vacas<br>
+  <input type = "radio" id = "ms" name  = "question1" value="Los tiburones"> Los tiburones<br>
+  <input type = "radio" id = "ms" name  = "question1" value="Los colibríes"> Los colibríes<br>
+
+  <p class = "questions">¿Cómo respiran las ballenas y los delfines?</p>
+  <input type = "radio" id = "ms" name  = "question2" value="Captan el oxígeno del aga através de sus branquias"> Captan el oxígeno del agua através de sus branquias<br>
+  <input type = "radio" id = "ms" name  = "question2" value="Captan el oxígeno del aire a través de su hocico"> Captan el oxígeno del aire a través de su hocico<br>
+  <input type = "radio" id = "ms" name  = "question2" value="Captan el oxígeno del aire a través de sus orificios nasales modificados"> Captan el oxígeno del aire a través de sus orificios nasales modificados<br>
+
+  <p class = "questions">¿Cómo perciben su entorno los delfines?</p>
+  <input type = "radio" id = "ms" name  = "question3" value="A través de sus ojos, pues tienen una excelente visión bajo el agua"> A través de sus ojos, pues tienen una excelente visión bajo el agua<br>
+  <input type = "radio" id = "ms" name  = "question3" value="Por medio de sonidos de alta frecuencia, de manera similar a un submarino"> Por medio de sonidos de alta frecuencia, de manera similar a un submarino<br>
+  <input type = "radio" id = "ms" name  = "question3" value="Por medio de sonidos de baja frecuencia"> Por medio de sonidos de baja frecuencia<br>
+
+  <p class = "questions">¿Cuál de las siguientes no es una característica de los cetáceos?</p>
+  <input type = "radio" id = "ms" name  = "question4" value="Son mamíferos, pues tienen glándulas mamarias"> Son mamíferos, pues tienen glándulas mamarias<br>
+  <input type = "radio" id = "ms" name  = "question4" value="Presentan pelo en etapas muy tempranas de su desarrollo"> Presentan pelo en etapas muy tempranas de su desarrollo<br>
+  <input type = "radio" id = "ms" name  = "question4" value="Nacen de los huevos que pone la madre en los mares de sargaso"> Nacen de los huevos que pone la madre en los mares de sargaso<br>
+
+  <p class = "questions">¿Qué animal es el mayor depredador de los océanos?</p>
+  <input type = "radio" id = "ms" name  = "question5" value="Los tiburones"> Los tiburones<br>
+  <input type = "radio" id = "ms" name  = "question5" value="Las ballenas"> Las ballenas<br>
+  <input type = "radio" id = "ms" name  = "question5" value="Las orcas"> Las orcas<br>
+
+  <input class = "button" type = "button" value = "¡Terminar Quiz!" onclick = "checkB();">
+
+ </form>
+   <div id = "after_submit"><!--Se crea div para Imprimir los resultados obtenidos-->
+   <p id = "number_correct"></p>
+   <p id = "message"></p>
+     <button class = "button" id="reset" type = "button" value = "Volver a Jugar!" onclick = "reset()"> Volver a jugar! </buttton>
+     <button class = "button" id="reset" type = "button" value = "Inicio!" onclick = "start()"> Inicio </button>
+
+
+</div>
+  <script src="app.js"></script>
+</body>
+</html>

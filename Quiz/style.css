@@ -1,0 +1,115 @@
+h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: 50px;
+    text-align:center;
+   }
+body {
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  background: AntiqueWhite;
+}
+#demo {
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+#star {
+  display:block;
+
+}
+
+#type-question {
+  display:none;
+}
+
+
+#quiz {
+display:none;
+margin-left:450px;
+background: CADETBLUE;
+padding: 10px 20px 10px 20px;
+width: 400px;
+border-radius: 20px;
+float: left;
+
+}
+#quizB {
+display:none;
+margin-left: 350px;
+background: plum;
+padding: 10px 20px 10px 20px;
+width: 600px;
+border-radius: 20px;
+float: left;
+
+}
+
+#me {
+display:none;
+margin-left: 350px;
+background: #8ACAE5;
+padding: 10px 20px 10px 20px;
+width: 600px;
+border-radius: 20px;
+float: left;
+
+}
+
+input {
+margin-bottom: 20px;
+display: block;
+}
+
+.button {
+background: Crimson;
+border: none;
+border-radius: 10px;
+padding: 10px;
+color: seashell;
+font-size: 16px;
+transition-duration: .5s;
+margin-top: 15px;
+font-family: 'Saira', sans-serif;
+font-weight: 400;
+}
+
+#reset{
+  margin-left: 15px;
+  width: 150px;
+}
+
+#a{
+font-size: 30px;
+width: 200px;
+height: 200px;
+}
+
+
+.button:hover {
+background: white;
+border: 1px solid #F6259D;
+color: black;
+cursor: pointer;
+font-weight: 600;
+
+}
+
+
+#after_submit {
+background:         linear-gradient(90deg, plum 20%, mediumaquamarine 80%);
+display:none;
+padding: 10px 20px 10px 20px;
+width: 340px;
+border-radius: 10px;
+float: left;
+margin-left: 450px;
+font-size: 30px;
+
+
+}
+#mc {
+display: inline;
+}
+#ms{
+  display:inline;
+}
